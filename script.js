@@ -25,7 +25,7 @@
    ];
    const base_path2 =
 
-     "http://api.openweathermap.org/data/2.5/group?id=" + getCity(cities) + "&APPID=b0cc16bac7c725efe8359a22b9f51cef";
+     "https://api.openweathermap.org/data/2.5/group?id=" + getCity(cities) + "&APPID=b0cc16bac7c725efe8359a22b9f51cef";
 
 
 
@@ -85,7 +85,7 @@
 
    const city = document.getElementById("city").value;
    const base_path =
-     "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=b0cc16bac7c725efe8359a22b9f51cef";
+     "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=b0cc16bac7c725efe8359a22b9f51cef";
 
 
 

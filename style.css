@@ -9,6 +9,12 @@
   background-color: #fff;
 }
 
+.weather-icon {
+  width: 15%;
+}
+
+
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);

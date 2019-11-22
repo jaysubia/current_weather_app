@@ -48,22 +48,30 @@
 
          let result2 = '';
 
-
+         //  background - image: url(https: //upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg);
 
          result2 +=
-           `<div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-                    <div class="card-body">
-                    <h5 class="card-title">${cityWeathers2.list[i].name}</h5>
-                    <p class="card-text">Here are some weather details for your City</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Weather: ${cityWeathers2.list[i].weather[0].main} <img class="card-img-top weather-icon" src="${getIconURL(cityWeathers2.list[i].weather[0].icon)}" alt="Card image cap"></li>
-                    <li class="list-group-item">Temperature: ${convertKtoF(cityWeathers2.list[i].main.temp) }&deg; </li>
-                    <li class="list-group-item">Wind Speed: ${convertMPStoMPH(cityWeathers2.list[i].wind.speed) } </li>
-                    <li class="list-group-item">Geo Location: ${cityWeathers2.list[i].coord.lat} , ${cityWeathers2.list[i].coord.lon}</li>
-                  </ul>
-             </div>`
+           `<div class="col-md-4 ">
+           <div class="card mb-4 box-shadow center-cards">
+               <div class="card-body">
+                   <h5 class="card-title">${cityWeathers2.list[i].name}</h5>
+                   <p class="card-text">Current Weather Conditions</p>
+               </div>
+               <ul>
+                   <li class="list-group-item"><img class="card-img-top weather-icon"
+                           src="${getIconURL(cityWeathers2.list[i].weather[0].icon)}"
+                           alt="Weather Cards">${cityWeathers2.list[i].weather[0].main} </li>
+                   <li class="list-group-item">Temperature: ${convertKtoF(cityWeathers2.list[i].main.temp)
+                       }&deg; </li>
+                   <li class="list-group-item">Wind Speed:
+                       ${convertMPStoMPH(cityWeathers2.list[i].wind.speed)
+                       } </li>
+                   <li class="list-group-item">Geo Location: ${cityWeathers2.list[i].coord.lat} ,
+                       ${cityWeathers2.list[i].coord.lon}</li>
+               </ul>
+           </div>
+       </div>
+   </div>`
 
          //  console.log(result2)
 
